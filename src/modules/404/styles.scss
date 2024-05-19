@@ -1,0 +1,65 @@
+@use "../../master.scss";
+
+.errorpage-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  @include master.flex-center();
+
+  .thumb {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    min-height: 100%;
+    @include master.flex-start-column();
+    padding-right: 40px;
+
+    h2 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 55px;
+      margin-bottom: 20px;
+      color: master.$theme-color;
+
+      @include master.md {
+        font-size: 30px;
+        line-height: normal;
+      }
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-weight: 300;
+
+      @include master.md {
+        font-size: 15px;
+      }
+    }
+
+    .custom-btn {
+      font-size: 16px;
+      padding: 16px 35px;
+
+      @include master.md {
+        font-size: 14px;
+        padding: 12px 25px;
+      }
+    }
+
+    @include master.sm {
+      padding: 0 50px;
+    }
+
+    @include master.md {
+      padding: 0 20px;
+    }
+  }
+
+  @include master.sm {
+    .thumb-box {
+      display: none;
+    }
+  }
+}

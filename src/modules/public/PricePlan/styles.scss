@@ -1,0 +1,10 @@
+@use "../../../master.scss";
+
+.price-plan-parent {
+  .ant-row {
+    @include master.md {
+      flex-flow: nowrap;
+      overflow: auto;
+    }
+  }
+}

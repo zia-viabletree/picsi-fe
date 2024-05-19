@@ -1,0 +1,27 @@
+@use "../../../master.scss";
+
+.paragraph-parent {
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    color: master.$text-color;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .paragraph-parent {
+    p {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .paragraph-parent {
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}

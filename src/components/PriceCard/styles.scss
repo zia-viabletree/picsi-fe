@@ -1,0 +1,42 @@
+@use "../../master.scss";
+
+.price-card-parent {
+  background: linear-gradient(
+    140.57deg,
+    rgba(187, 132, 255, 0.3) 0%,
+    rgba(115, 135, 255, 0.3) 100%
+  );
+  padding: 10px 20px;
+  border: 1px solid #4b0082;
+  border-radius: 15px;
+  height: 858px;
+  position: relative;
+  min-width: 310px;
+  width: 100%;
+
+  p {
+    line-height: 19px;
+  }
+
+  .title {
+    @include master.flex-between;
+    padding: 20px;
+    border-radius: 15px;
+    background: #4b0082;
+  }
+  ul {
+    margin-left: 20px;
+    li {
+      margin-bottom: 20px;
+    }
+    li::marker {
+      color: #4b0082;
+    }
+  }
+
+  .price-btn {
+    bottom: 20px;
+    position: absolute;
+    width: calc(100% - 60px);
+  }
+}

@@ -1,0 +1,13 @@
+@use "../../../master.scss";
+
+.home-wrapper {
+  .swap-parent {
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 120px 0;
+
+    @include master.md {
+      margin: 20px 0;
+    }
+  }
+}

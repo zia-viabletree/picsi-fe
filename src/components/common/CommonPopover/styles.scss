@@ -1,0 +1,14 @@
+@use "../../../master.scss";
+
+.ant-popover {
+  .ant-popover-arrow::before {
+    background-color: master.$black-color;
+  }
+  .ant-popover-inner {
+    background-color: master.$black-color;
+    width: 225px;
+    .ant-popover-inner-content {
+      color: master.$white-color;
+    }
+  }
+}

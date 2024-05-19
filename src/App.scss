@@ -1,0 +1,128 @@
+@use "./master.scss";
+
+html,
+body {
+  scroll-behavior: smooth;
+  min-height: 95%;
+  margin: 0;
+}
+
+body {
+  background-image: url("./assets/images/backgound.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+*,
+input,
+button {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: master.$font-Manrope, sans-serif !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.c-p {
+  cursor: pointer;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+a {
+  text-decoration: none;
+  color: master.$theme-color;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  font-size: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: master.$theme-color;
+  border-radius: 3px;
+  border: 3px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    background: #6f5383;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 100%;
+
+  @media (min-width: 1400px) {
+    width: 1340px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1140px;
+  }
+
+  @media (min-width: 992px) {
+    width: 960px;
+  }
+
+  @media (min-width: 768px) {
+    width: 720px;
+  }
+
+  @media (min-width: 476px) {
+    width: 100%;
+  }
+}
+
+.white-text {
+  color: master.$white-color !important;
+}
+
+.theme-text {
+  color: master.$theme-color !important;
+}
+
+.light-text {
+  color: master.$text-light-color !important;
+}
+
+.flex-between {
+  width: 100%;
+  @include master.flex-between;
+}

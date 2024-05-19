@@ -1,0 +1,24 @@
+@use "../../master.scss";
+
+.multi-swap-parent {
+  align-items: center;
+  margin: 50px 0 120px 0;
+
+  .swap-btn {
+    @include master.lg {
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+
+  @include master.md {
+    margin: 20px 0;
+  }
+
+  @include master.lg {
+    .ant-col {
+      width: 100%;
+    }
+  }
+}

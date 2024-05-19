@@ -1,0 +1,62 @@
+/* Default button styles */
+
+@use "../../../master.scss";
+
+button.ant-btn {
+  font-size: 15px;
+  height: 56px;
+  width: 100%;
+  min-width: 100px;
+  border-radius: 12px;
+  font-weight: 600;
+  background: linear-gradient(140.57deg, #bb84ff 0%, #7387ff 100%);
+  color: master.$white-color;
+
+  &:hover {
+    opacity: 0.8 !important;
+    background-color: master.$theme-light-color !important;
+  }
+}
+
+.swap-btn {
+  .ant-btn {
+    background: #4ecdc4;
+    box-shadow: none;
+    font-weight: 700;
+    &:hover {
+      opacity: 0.8 !important;
+      background-color: #4ecdc4 !important;
+    }
+  }
+}
+
+.discord-btn {
+  .ant-btn {
+    background: #5865f2;
+    box-shadow: none;
+    font-weight: 700;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      opacity: 0.8 !important;
+      background-color: #5865f2 !important;
+    }
+  }
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 767px) {
+  button.ant-btn {
+    font-size: 13px;
+    height: 42px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  button.ant-btn {
+    font-size: 14px;
+    height: 48px;
+  }
+}

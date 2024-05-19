@@ -1,0 +1,15 @@
+.common-checkbox {
+  .ant-checkbox-input {
+    width: 31px;
+    height: 31px;
+  }
+
+  .ant-checkbox-inner {
+    width: 31px;
+    height: 31px;
+    &::after {
+      width: 10px;
+      height: 18px;
+    }
+  }
+}

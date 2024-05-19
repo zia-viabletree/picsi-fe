@@ -1,0 +1,56 @@
+@use "../../master.scss";
+
+.swapping-tabs-parent {
+  display: flex;
+  justify-content: space-between;
+  .swapping-tabs {
+    display: flex;
+    justify-content: end;
+
+    .tab {
+      @include master.flex-center;
+      padding: 20px 80px;
+
+      @include master.md {
+        padding: 8px 0;
+        width: 100%;
+      }
+    }
+    .tab1 {
+      border-radius: 15px 0px 0px 15px;
+    }
+    .tab2 {
+      border-radius: 0px 15px 15px 0px;
+    }
+    .active {
+      background: linear-gradient(140.57deg, #bb84ff 0%, #7387ff 100%);
+      p {
+        color: master.$white-color;
+      }
+    }
+    .un-active {
+      border: 1px solid #4b008240;
+      background: master.$white-color;
+      p {
+        color: master.$dark-text-color;
+      }
+    }
+  }
+
+  .credits-parent {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .credits {
+      background: #4b008299;
+      border-radius: 12px;
+      padding: 13px 20px 13px 20px;
+      @include master.md {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

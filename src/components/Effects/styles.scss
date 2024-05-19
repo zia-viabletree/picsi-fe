@@ -1,0 +1,29 @@
+@use "../../master.scss";
+
+.effect-parent {
+  @include master.flex-center;
+
+  .effect {
+    border-radius: 6px;
+    background: #ff6b6b;
+    @include master.flex-center;
+    padding: 10px;
+    gap: 10px;
+    // margin-bottom: 10px;
+
+    .effect-content {
+      @include master.flex-center;
+      gap: 10px;
+    }
+
+    @include master.md {
+      @include master.flex-between;
+    }
+  }
+  @include master.md {
+    flex-direction: column;
+    .ant-col {
+      width: 100%;
+    }
+  }
+}
