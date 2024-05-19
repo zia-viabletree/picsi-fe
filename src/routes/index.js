@@ -18,7 +18,7 @@ import { Dashboard, Error, Home, Login, PricePlan } from "../modules";
 const renderRouteSharedLayout = (title, description, access, component) => (
   <React.Fragment>
     <Helmet>
-      <title>{title ? `${title} |` : ""} App name</title>
+      <title>{title ? `${title} |` : ""} Picsi</title>
       {description && <meta name="description" content={description} />}
     </Helmet>
     {access === ACCESS_TYPES.AUTH ? (

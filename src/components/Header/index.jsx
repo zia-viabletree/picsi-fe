@@ -2,6 +2,7 @@ import { Col, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import { Images } from "../../theme";
 import "./styles.scss";
+import { PRICE_PLAN } from "../../constants";
 
 const Header = () => {
   // const [scroll, setScroll] = useState(0);
@@ -125,7 +126,7 @@ const Header = () => {
               <span>Unlock Advanced Features with Patreon</span>
             </a>
             <div className="seperator" />
-            <a href="#" className="stripe-btn top-header-btns">
+            <a href={PRICE_PLAN} className="stripe-btn top-header-btns">
               <img src={Images.stripe} />
               <span>Unlock Advanced Features with Stripe</span>
             </a>
@@ -184,7 +185,7 @@ const Header = () => {
               <div className="seperator desktop-none" />
 
               <a
-                href="#"
+                href={PRICE_PLAN}
                 className="stripe-btn top-header-btns desktop-none"
                 onClick={() => setNavOpen(false)}
               >
