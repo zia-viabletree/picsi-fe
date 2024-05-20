@@ -15,7 +15,7 @@ const FaceSwapping = ({ isShrink, result }) => {
         <ImageUploader placeholder={Images.targetImg} name={"targetImg"} />
       </Col>
       <Col xs={24} sm={24} md={24} lg={3} xxl={3}>
-        <CommonButton htmlType="submit" topClass={"swap-btn"} text={"swap"} />
+        <CommonButton htmlType="submit" topClass={"swap-btn"} text={"swap!"} />
       </Col>
       <Col xs={24} sm={24} md={24} lg={7} xxl={7}>
         <SwapLoading result={result} isShrink={isShrink} />

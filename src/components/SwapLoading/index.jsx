@@ -10,10 +10,10 @@ const SwapLoading = ({ result, isShrink, multi }) => {
           <img src={result} className="result-img" />
         </div>
       )}
-      <div className={`blinking-dot dot1 ${isShrink ? "animate" : ""}`}></div>
-      <div className={`blinking-dot dot2 ${isShrink ? "animate" : ""}`}></div>
-      <div className={`blinking-dot dot3 ${isShrink ? "animate" : ""}`}></div>
-      <div className={`blinking-dot dot4 ${isShrink ? "animate" : ""}`}></div>
+      <div className={`blinking-dot dot1`}></div>
+      <div className={`blinking-dot dot2`}></div>
+      <div className={`blinking-dot dot3`}></div>
+      <div className={`blinking-dot dot4`}></div>
 
       <div className="content-parent">
         <div className="img-parent">

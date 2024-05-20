@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { paidEffects } from "../../constants";
+import { paidEffects, PRICE_PLAN } from "../../constants";
 import { Col, Row, Slider } from "antd";
 import {
   CommonButton,
@@ -10,9 +10,11 @@ import {
 } from "../common";
 import "./styles.scss";
 import { Images } from "../../theme";
+import { useNavigate } from "react-router-dom";
 
 const PaidEffects = () => {
   const [premium, setPremium] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <Row gutter={[20, 10]} className="paid-effect-parent">
@@ -58,7 +60,7 @@ const PaidEffects = () => {
             "This feature is available for paid subscribers. Upgrade now by subscribing with Patreon or Stripe above to enjoy full access!"
           }
         />
-        <CommonButton text={"upgrade"} />
+        <CommonButton text={"upgrade"} onClick={() => navigate(PRICE_PLAN)} />
       </CommonModal>
     </Row>
   );

@@ -32,7 +32,7 @@ const MultiFaceSwapping = ({ isShrink, result }) => {
           width={"130px"}
           htmlType="submit"
           topClass={"swap-btn"}
-          text={"swap"}
+          text={"swap!"}
         />
       </Col>
       <Col>

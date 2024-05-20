@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import "./styles.scss";
 import { Col, Row } from "antd";
 import { CommonButton, CommonModal, CommonTextField } from "../common";
+import { Images } from "../../theme";
+import { useNavigate } from "react-router-dom";
+import { PRICE_PLAN } from "../../constants";
 
 const SwapTab = ({ active, setActive }) => {
   const [credit, setCreditLimit] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <Row gutter={[20, 20]} className="swapping-tabs-parent">
@@ -20,6 +24,7 @@ const SwapTab = ({ active, setActive }) => {
           onClick={() => setActive("2")}
         >
           <CommonTextField fontWeight={600} text={"Multi-Face Swapping"} />
+          <img src={Images.paidIcon} />
         </div>
       </Col>
       <Col lg={6} md={6} sm={24} xs={24} className="credits-parent">
@@ -55,7 +60,7 @@ const SwapTab = ({ active, setActive }) => {
             "You've used all your credits for today. Come back tomorrow or upgrade your subscription for more credits and features!"
           }
         />
-        <CommonButton text={"upgrade"} />
+        <CommonButton text={"upgrade"} onClick={() => navigate(PRICE_PLAN)} />
       </CommonModal>
     </Row>
   );
