@@ -12,6 +12,7 @@ import discordIcon from "../assets/images/discord-icon.png";
 import Patreon from "../assets/images/patreon.svg";
 import Discord from "../assets/images/discord.svg";
 import stripe from "../assets/images/Stripe.png";
+import redArrow from "../assets/images/red-arrow.png";
 
 export default {
   ErrorThumbnail,
@@ -28,4 +29,5 @@ export default {
   Patreon,
   Discord,
   stripe,
+  redArrow,
 };

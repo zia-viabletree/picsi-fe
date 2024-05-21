@@ -15,10 +15,25 @@
     );
     border-radius: 15px;
     border: 1px dashed #4b0082;
-    transition: all 0.5s;
+    transition: box-shadow 0.5s;
 
     &:hover {
       box-shadow: 0px 30px 30px 0px #4b008233;
+    }
+
+    .red-arrow {
+      position: absolute;
+      right: -54px;
+      top: 50%;
+      z-index: 9;
+
+      @include master.lg {
+        left: 43%;
+        top: auto;
+        bottom: -22px !important;
+        transform: rotate(75deg) !important;
+        width: 48px;
+      }
     }
     .ant-upload {
       width: 100%;

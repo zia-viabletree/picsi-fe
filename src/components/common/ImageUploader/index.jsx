@@ -19,6 +19,7 @@ const ImageUploader = ({
   text = "Tap or click to upload source Image",
   name,
   multi,
+  redIcon = false,
 }) => {
   const [loading, setLoading] = useState(false);
   const [imageUrl, setImageUrl] = useState(profileImage);
@@ -70,6 +71,7 @@ const ImageUploader = ({
         // beforeUpload={beforeUpload}
         onChange={handleChange}
       >
+        {redIcon && <img src={Images.redArrow} className="red-arrow" />}
         {loading ? (
           <Loader height="100%" />
         ) : imageUrl ? (

@@ -9,7 +9,7 @@ const FaceSwapping = ({ isShrink, result }) => {
   return (
     <Row gutter={[20, 20]} className="swap-parent">
       <Col xs={24} sm={24} md={24} lg={7} xxl={7}>
-        <ImageUploader name={"sourceImg"} />
+        <ImageUploader name={"sourceImg"} redIcon={true} />
       </Col>
       <Col xs={24} sm={24} md={24} lg={7} xxl={7}>
         <ImageUploader placeholder={Images.targetImg} name={"targetImg"} />
