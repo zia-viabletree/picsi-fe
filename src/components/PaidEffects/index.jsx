@@ -17,7 +17,7 @@ const PaidEffects = () => {
   const navigate = useNavigate();
 
   return (
-    <Row gutter={[20, 10]} className="paid-effect-parent">
+    <Row gutter={[10, 10]} className="paid-effect-parent">
       {paidEffects.map((t) => (
         <Col key={Math.random()}>
           <div className="effect">
