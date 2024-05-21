@@ -141,7 +141,8 @@ const Header = () => {
 
             <div className={`header-btn-wrapper ${navOpen ? "active" : ""}`}>
               <a
-                href="#"
+                target="_blank"
+                href="https://picsi-1e259.web.app/"
                 className="face-wrap-btn"
                 onClick={() => setNavOpen(false)}
               >
@@ -151,7 +152,8 @@ const Header = () => {
               <div className="seperator" />
 
               <a
-                href="#faq"
+                target="_blank"
+                href="https://picsi-web.web.app/#faq"
                 className="face-wrap-discord-btn"
                 onClick={() => setNavOpen(false)}
               >

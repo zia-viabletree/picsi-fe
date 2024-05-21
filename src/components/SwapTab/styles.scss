@@ -8,6 +8,7 @@
     justify-content: end;
 
     .tab {
+      cursor: pointer;
       @include master.flex-center;
       padding: 20px 80px;
 
@@ -46,6 +47,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    cursor: pointer;
 
     .credits {
       background: #4b008299;

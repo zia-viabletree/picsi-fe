@@ -9,6 +9,9 @@ import paidIcon from "../assets/images/paidIcon.png";
 import dummyResult from "../assets/images/dummy-result.jpg";
 import dummyResult2 from "../assets/images/dummy-result2.jpg";
 import discordIcon from "../assets/images/discord-icon.png";
+import Patreon from "../assets/images/patreon.svg";
+import Discord from "../assets/images/discord.svg";
+import stripe from "../assets/images/Stripe.png";
 
 export default {
   ErrorThumbnail,
@@ -22,4 +25,7 @@ export default {
   dummyResult,
   dummyResult2,
   discordIcon,
+  Patreon,
+  Discord,
+  stripe,
 };
